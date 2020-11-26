@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="main text-center">
+    <div className="main text-center ISENG">
       <div className="judul">SIMPLE COUNTDOWN</div>
       <div className="info" id="info"></div>
       <div className="up" id="up">
