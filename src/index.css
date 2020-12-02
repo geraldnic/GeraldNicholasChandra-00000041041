@@ -1,14 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #42c5f5;
+.judul{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.up{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.waktu{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.jam{
+  display: inline-block;
+}
+
+.menit{
+  display: inline-block;
+}
+
+.detik{
+  display: inline-block;
+}
+
+.buttonStart{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  border: solid 2px black;
+  margin: 5px;
+  padding: 5px;
+  width: 100px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttonReset{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  border: solid 2px black;
+  margin: 5px;
+  padding: 5px;
+  width: 100px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.down{
+  cursor: pointer;
 }
