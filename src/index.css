@@ -53,3 +53,8 @@
 .down{
   cursor: pointer;
 }
+
+.btn{
+  border: solid black 1px;
+  margin: 5px;
+}

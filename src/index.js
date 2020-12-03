@@ -18,12 +18,15 @@ function plusMenit(){
   menit += 1;
   menitcek();
   document.getElementById("menit").innerHTML = menit;
+  document.getElementById("jam").innerHTML = jam;
 }
 
 function plusDetik(){
   detik += 1;
   detikcek();
   document.getElementById("detik").innerHTML = detik;
+  document.getElementById("menit").innerHTML = menit;
+  document.getElementById("jam").innerHTML = jam;
 }
 
 function detikcek(){
@@ -33,6 +36,10 @@ function detikcek(){
   if(detik>59){
     detik = 0;
     menit += 1;
+  }
+  if(menit>59){
+    menit = 0;
+    jam += 1;
   }
 }
 
@@ -70,6 +77,12 @@ function minusJam(){
   document.getElementById("jam").innerHTML = jam;
 }
 
+function reset(){
+  document.getElementById("jam").innerHTML = 0;
+  document.getElementById("menit").innerHTML = 0;
+  document.getElementById("detik").innerHTML = 0;
+}
+
 const Test = () => {
   return (
 
@@ -103,8 +116,8 @@ const Test = () => {
   <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
 </svg>
       </div>
-      <button class="start" id="start">START</button>
-      <button class="reset" id="reset">RESET</button>
+      <button class="btn btn-success" id="start">START</button>
+      <button class="btn btn-warning" id="reset" onClick={reset}>RESET</button>
     </div>
   );
 }
