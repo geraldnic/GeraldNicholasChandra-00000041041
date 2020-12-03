@@ -78,9 +78,12 @@ function minusJam(){
 }
 
 function reset(){
-  document.getElementById("jam").innerHTML = 0;
-  document.getElementById("menit").innerHTML = 0;
-  document.getElementById("detik").innerHTML = 0;
+  jam = 0;
+  menit = 0;
+  detik = 0;
+  document.getElementById("jam").innerHTML = jam;
+  document.getElementById("menit").innerHTML = menit;
+  document.getElementById("detik").innerHTML = detik;
 }
 
 const Test = () => {
